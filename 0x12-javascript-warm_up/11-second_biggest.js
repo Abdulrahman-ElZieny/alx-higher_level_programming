@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const { argv } = require('process');
 const argNum = argv.length;
-let arr = [];
+const arr = [];
 for (let x = 2; x < argNum; x++) {
   arr.push(argv[x]);
 }

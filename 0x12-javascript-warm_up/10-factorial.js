@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const { argv } = require('process');
-function factorial(num) {
+function factorial (num) {
   if (num === 0) {
     return 1;
   } else {
@@ -8,6 +8,8 @@ function factorial(num) {
   }
 }
 const x = parseInt(argv[2]);
-if (!isNaN(x)){
+if (isNaN(x)) {
+  console.log(1);
+} else {
   console.log(factorial(parseInt(argv[2])));
 }
